@@ -1,8 +1,10 @@
-= YouTube integration =
+YouTube integration
+====================
 
 This is a plugin for `pretalx`.
 
-== Development setup ==
+Development setup
+------------------
 
 1. Make sure that you have a working `pretalx development setup`.
 
