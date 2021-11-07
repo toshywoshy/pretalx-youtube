@@ -6,13 +6,13 @@ def is_youtube_url(url):
 
 
 def get_embed_url(url):
-    if "www.youtube.com" in url:
+    if "www.youtube.com/embed" in url:
         return url
     if not is_youtube_url(url):
         return
 
-    url = url[url.find("www.youtube.com/") + len("www.youtube.com/") :]
-    video_id = url.split("/")[0]
+    url = url[url.find("www.youtube.com/watch?v=") + len("www.youtube.com/watch?v=") :]
+    video_id = url
     return f"https://www.youtube-nocookie.com/embed/{video_id}"
 
 class YouTubeProvider(BaseRecordingProvider):
